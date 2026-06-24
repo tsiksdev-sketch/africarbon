@@ -1,7 +1,6 @@
 import { Resend } from "resend"
 import { NextResponse } from "next/server"
 
-const resend = new Resend(process.env.RESEND_API_KEY)
 
 function escapeHtml(value: string) {
   return value
@@ -13,6 +12,8 @@ function escapeHtml(value: string) {
 }
 
 export async function POST(request: Request) {
+  const resend = new Resend(process.env.RESEND_API_KEY)
+
   try {
     const body = await request.json()
     const {
