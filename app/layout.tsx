@@ -8,6 +8,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import CustomCursor from "@/components/Cursor";
 import { Toaster } from 'sonner'
 import { LanguageProvider } from "@/lib/i18n/language-context";
+import WhatsAppChat from "@/components/Whatsapp";
 
 const roboto =Roboto({
   subsets:['latin'],
@@ -51,6 +52,7 @@ export default function RootLayout({
      </SmoothScroll>
      <ScrollToTop/>
      <CustomCursor/>
+     <WhatsAppChat/>
      </LanguageProvider>
       </body>
     </html>
