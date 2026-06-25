@@ -33,10 +33,10 @@ const gangs: Gang[] = [
   {
     label: "Services",
     items: [
-      { to: "./climatefinance", label: "Climate Finance", desc: "nav.tools.carbon-calculator.desc" },
-      { to: "./esgfootprint", label: "ESG, GHG & Carbon Footprinting", desc: "nav.tools.glossary.desc" },
-      { to: "./recs", label: "Renewable Energy Certificates & Energy Attribute Markets", desc: "nav.tools.glossary.desc" },
-      { to:"./mrvsafeguard", label: "MRV and Safeguards ", desc: "nav.tools.glossary.desc" },
+     { to: "./climatefinance", label: "Climate Finance", desc: "Track and report climate finance impacts." },
+{ to: "./esgfootprint", label: "ESG, GHG & Carbon Footprinting", desc: "Measure GHG and carbon footprints." },
+{ to: "./recs", label: "Renewable Energy Certificates & Energy Attribute Markets", desc: "Manage RECs and energy attributes." },
+{ to: "./mrvsafeguard", label: "MRV and Safeguards", desc: "Strengthen MRV and safeguard compliance." }
      
     ],
   },
