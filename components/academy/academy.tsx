@@ -134,7 +134,7 @@ const Academy = () => (
           institutional programmes.
         </p>
         <Button  className="mt-6 bg-lime-500" asChild>
-          <Link href="./contact">Request Training Support <ArrowRight className="h-4 w-4" /></Link>
+          <Link href="/contact">Request Training Support <ArrowRight className="h-4 w-4" /></Link>
         </Button>
       </motion.div>
     </section>

@@ -95,7 +95,7 @@ const GrowATree = () => {
             programmes.
           </p>
           <Button  className="mt-6 bg bg-lime-500" asChild>
-            <Link href="./contact">Contact AICTS <ArrowRight className="h-4 w-4" /></Link>
+            <Link href="/contact">Contact AICTS <ArrowRight className="h-4 w-4" /></Link>
           </Button>
         </motion.div>
       </section>

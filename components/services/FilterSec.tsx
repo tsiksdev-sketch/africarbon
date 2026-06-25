@@ -128,7 +128,7 @@ export default function FilterSection() {
               })}
                <MotionImage
       alt="icon"
-      src="./w.png"
+      src="/w.png"
       width={500}
       height={500}
       className="h-full w-full"

@@ -63,10 +63,10 @@ export default function SideNav (){
 
         
           <div className='flex-1 flex flex-col text-white pt-10  overflow-y-auto'>
-             <Link href="./" className="rounded-md pl-12 text-[16px] ">
+             <Link href="/" className="rounded-md pl-12 text-[16px] ">
            Home
           </Link>
-           <Link href="./about" className="rounded-md pl-12 pt-2 text-[16px]">
+           <Link href="/about" className="rounded-md pl-12 pt-2 text-[16px]">
            About
           </Link>
             {gangs.map((d) => (

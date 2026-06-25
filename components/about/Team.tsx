@@ -23,13 +23,13 @@ function Team() {
                                <p>We have a global team of more than 350 environmental sustainability experts, including engineers, financiers and policy specialists, working with diverse industries and business sectors around the world.</p>
                               
                                <div className='pt-10'>
-                                 <Link href='./contact'>
+                                 <Link href='/contact'>
                                    <Button className=" cursor-pointer bg-lime-500 text-[16px] text-white"  size="lg">Get In Touch</Button>
                                  </Link>
                                </div>
                             </div>
                             <div className='flex-1'>
-                                  <Image src="./ab.png" alt="team" width={500} height={500} className='w-full h-auto' />
+                                  <Image src="/ab.png" alt="team" width={500} height={500} className='w-full h-auto' />
                             </div>
                         </div>
                </div> 

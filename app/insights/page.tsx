@@ -13,7 +13,7 @@ function page() {
       title=' Knowledge for credible African climate-market participation'
       description=' AICTS Insights provides practical analysis, explainers, policy notes and market intelligence for institutions
             working across carbon markets, RECs, ESG, MRV, Article 6, climate finance and sustainability implementation.'
-      src='./d.png'
+      src='/d.png'
 
       />
 

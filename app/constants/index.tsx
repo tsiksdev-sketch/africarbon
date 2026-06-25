@@ -3,7 +3,7 @@ import { id } from "zod/v4/locales";
 export const featuredNews = [
   {
     id: "1",
-    src: "./n.png",
+    src: "/n.png",
     title: "EU ETS & Company Impact: What to Watch in 2026",
     description: "Understand carbon pricing signals and prepare for compliance changes.",
     longDescription:
@@ -11,7 +11,7 @@ export const featuredNews = [
   },
   {
     id: "2",
-    src: "./n.png",
+    src: "/n.png",
     title: "Scope 3 Spotlight: Finding the Biggest Emissions Hotspots",
     description: "A step-by-step approach to prioritizing categories and improving data quality.",
     longDescription:
@@ -19,7 +19,7 @@ export const featuredNews = [
   },
   {
     id: "3",
-    src: "./n.png",
+    src: "/n.png",
     title: "Climate Tech & Procurement: Building Low-Carbon Supply Chains",
     description: "How to evaluate vendors using emissions criteria and reduction plans.",
     longDescription:
@@ -27,7 +27,7 @@ export const featuredNews = [
   },
   {
     id: "4",
-    src: "./n.png",
+    src: "/n.png",
     title: "Reporting Readiness: Turning Climate Data into Audit-Proof Evidence",
     description: "Build governance, traceability, and controls for modern disclosure expectations.",
     longDescription:

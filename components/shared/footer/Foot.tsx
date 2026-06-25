@@ -9,29 +9,29 @@ const cols = [
     title: "Services",
     links: [
 
-      { to: "./climatefinance", label: "Climate Finance" },
-      { to: "./recs", label: "RECS and EAM" },
+      { to: "/climatefinance", label: "Climate Finance" },
+      { to: "/recs", label: "RECS and EAM" },
     ],
   },
   {
     title: "Tools",
     links: [
-      { to: "./tools/carbon", label: "Carbon Calculator" },
-      { to: "./tools/glossary", label: "Glossary" },
+      { to: "/tools/carbon", label: "Carbon Calculator" },
+      { to: "/tools/glossary", label: "Glossary" },
     ],
   },
   {
     title: "Get In Touch",
     links: [
-      { to: "./contact", label: "Telephone: +263 71 678 0112 | +260 961 375 645" },
-         { to: "./contact", label: "Email: contact@africarbontrading.com" },
+      { to: "/contact", label: "Telephone: +263 71 678 0112 | +260 961 375 645" },
+         { to: "/contact", label: "Email: contact@africarbontrading.com" },
     ],
   },
   {
     title: "Location",
     links: [
-      { to: "./contact", label: "Zimbabwe Office: 8 Jackson Road, Hillside" },
-      { to: "./contact", label: "Zambia Office: 86 Independence Avenue, Lusaka, Zambia" },
+      { to: "/contact", label: "Zimbabwe Office: 8 Jackson Road, Hillside" },
+      { to: "/contact", label: "Zambia Office: 86 Independence Avenue, Lusaka, Zambia" },
      
     ],
   },
@@ -41,7 +41,7 @@ const Footer = () => (
   <footer 
   className="border-t border-border px-6 py-16 relative flex flex-col items-center gap-10 w-full bg-norepeat bg-fixed"
   style={{
-    backgroundImage: 'url("./x.png")',
+    backgroundImage: 'url("/x.png")',
    
   }}
 >

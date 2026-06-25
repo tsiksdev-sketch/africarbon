@@ -184,10 +184,10 @@ export const courses = [
 ];
 
 export const ico =[
-     {src:"./gh.jpg",},
-      {src:"./gw.jpg",},
-       {src:"./gh.jpg",},
-        {src:"./gw.jpg",}
+     {src:"/gh.jpg",},
+      {src:"/gw.jpg",},
+       {src:"/gh.jpg",},
+        {src:"/gw.jpg",}
 ]
 
 export const features = [

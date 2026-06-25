@@ -132,7 +132,7 @@ const AfricaRECs = () => {
             AICTS can help assess REC readiness, documentation, metering evidence and buyer-facing communication.
           </p>
           <Button  className="mt-6 bg-lime-500" asChild>
-            <Link href="./start-a-diagnostic">Request REC Support <ArrowRight className="h-4 w-4" /></Link>
+            <Link href="/start-a-diagnostic">Request REC Support <ArrowRight className="h-4 w-4" /></Link>
           </Button>
         </motion.div>
       </section>

@@ -11,7 +11,7 @@ function page() {
     subtitle='Services'
     title="Our Impact"
     description='Discover how Africarbon is transforming the carbon market in Africa, empowering communities, and driving sustainable change. Explore our impact stories, project highlights, and the positive outcomes we have achieved together.'
-    src='./c.png'
+    src='/c.png'
     />
     <FilterSection/>
     <TwoColScrollText/>

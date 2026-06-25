@@ -16,7 +16,7 @@ function page() {
         subtitle="About Us"
         title="Leading the Way in Carbon Solutions"
         description="We are a team of experts dedicated to providing innovative carbon management strategies and solutions."
-        src="./a.png"
+        src="/a.png"
       />
 
       <About />

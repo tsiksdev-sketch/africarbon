@@ -11,7 +11,7 @@ function page() {
       subtitle='Africa RECs'
       title='Advancing renewable energy certificate readiness in African markets'
       description='Africa RECs is an AICTS-led platform supporting renewable energy certificate awareness, generator readiness, buyer education and energy attribute market development across selected African markets.'
-      src='./d.png'
+      src='/d.png'
 
       />
 

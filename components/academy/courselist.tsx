@@ -293,7 +293,7 @@ const Courses = () => {
             className="relative mt-6 bg-emerald-500 text-white hover:bg-emerald-400 shadow-[0_0_0_3px_rgba(16,185,129,0.15)]"
             asChild
           >
-            <Link href="./services">Explore the Sprint</Link>
+            <Link href="/services">Explore the Sprint</Link>
           </Button>
         </div>
       </section>

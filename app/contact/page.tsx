@@ -12,7 +12,7 @@ function page() {
     subtitle="Contact AICTS"
     title="Start a conversation with AICTS"
     description="Whether you are developing a carbon project, preparing a REC pathway, building a national carbon market framework, assessing your carbon footprint, strengthening ESG reporting, designing MRV systems, seeking climate finance or building institutional capacity, AICTS can help you move from climate ambition to structured implementation."
-    src="./b.png"
+    src="/b.png"
     />
     <ContactMap/>
     <ContactForm/>

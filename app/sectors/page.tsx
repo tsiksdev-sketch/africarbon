@@ -9,7 +9,7 @@ function page() {
     subtitle="Sectors"
     title="Climate-market support across Africa's key transition sectors"
     description="AICTS provides carbon market and sustainability advisory services across sectors where climate action, emissions reduction, resilience, finance and development impact intersect."
-    src="./b.png"
+    src="/b.png"
     />
   <Sectors/>
     </main>

@@ -14,7 +14,7 @@ function About() {
                <div className='w-full flex flex-col gap-4 md:flex-row'>
         <div className='flex flex-col flex-1 relative'>
             <video
-              src="./h.mp4"
+              src="/h.mp4"
               className="h-full w-full"
               style={{ objectFit: 'contain' }}
               autoPlay
@@ -30,7 +30,7 @@ function About() {
     >
       <Image
         alt="icon"
-        src="./s.png"
+        src="/s.png"
         width={500}
         height={500}
         className="h-20 w-20 md:h-40 md:w-40 rounded-t-sm"
@@ -55,8 +55,8 @@ function About() {
             </div>
 
              <div className='flex flex-row gap-5'>
-              <Link href='./services'>  <Button className="cursor-pointer bg-emerald-500" size="lg">Start Learning</Button>  </Link>
-              <Link href='./courses'>  <Button className="cursor-pointer bg-lime-500" size="lg">View Courses</Button> </Link>
+              <Link href='/services'>  <Button className="cursor-pointer bg-emerald-500" size="lg">Start Learning</Button>  </Link>
+              <Link href='/courses'>  <Button className="cursor-pointer bg-lime-500" size="lg">View Courses</Button> </Link>
           
              </div>
 

@@ -4,31 +4,31 @@ const data:Data = {
     menu:[
        {
         name:'Sectors',
-        href:'./sectors',
+        href:'/sectors',
        },
        {
         name:'Africa RECs ',
-        href:'./africarecs',
+        href:'/africarecs',
        },
         {
         name:'AICTS Academy ',
-        href:'./academy',
+        href:'/academy',
        },
        {
         name:'GTF ',
-        href:'./gat',
+        href:'/gat',
        },
         {
         name:'Insights',
-        href:'./insights',
+        href:'/insights',
        },
         {
         name:'Tools',
-        href:'./tools',
+        href:'/tools',
        },
            {
         name:'Contact',
-        href:'./contact',
+        href:'/contact',
        },
        
        

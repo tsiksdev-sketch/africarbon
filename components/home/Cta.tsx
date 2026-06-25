@@ -96,7 +96,7 @@ const CTASection = () => {
             whileTap={{ scale: 0.98 }}
             transition={{ type: "spring", stiffness: 400, damping: 20 }}
           >
-            <Link href='./courses'>
+            <Link href='/courses'>
               <Button size="lg" className="bg-lime-500 text-white">
              Start a Conversation
             </Button>

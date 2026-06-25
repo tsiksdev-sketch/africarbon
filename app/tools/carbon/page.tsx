@@ -10,7 +10,7 @@ function page() {
     subtitle='Tools'
     title=' Carbon Calculater'
     description='Estimate your annual footprint in under a minute. Inputs are illustrative'
-    src='./f.png'
+    src='/f.png'
     />
    <Calculator/>
    </main>

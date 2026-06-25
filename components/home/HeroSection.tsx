@@ -27,7 +27,7 @@ const HeroSection = () => {
     <section ref={ref} className="relative h-135 overflow-hidden">
       {/* Background parallax (still scroll-driven) */}
       <motion.div style={{ y }} className="absolute inset-0">
-        <Image src="./two.png" alt="Description of the image" fill className="object-cover" />
+        <Image src="/two.png" alt="Description of the image" fill className="object-cover" />
         <div className="absolute inset-0 bg-black/60" />
       </motion.div>
 
@@ -79,8 +79,8 @@ const HeroSection = () => {
           transition={{ delay: 0.5, duration: 0.6 }}
           className="mt-10 flex gap-4"
         >
-         <Link href='./about'> <Button className="cursor-pointer bg-emerald-500" size="lg">Start a Conversation</Button> </Link> 
-         <Link href='./courses'> <Button className="cursor-pointer bg-lime-500" size="lg">Explore Our Services</Button> </Link>
+         <Link href='/about'> <Button className="cursor-pointer bg-emerald-500" size="lg">Start a Conversation</Button> </Link> 
+         <Link href='/courses'> <Button className="cursor-pointer bg-lime-500" size="lg">Explore Our Services</Button> </Link>
          
         </motion.div>
       </motion.div>

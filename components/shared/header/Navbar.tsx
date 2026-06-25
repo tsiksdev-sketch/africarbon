@@ -56,15 +56,15 @@ const Navbar = () => {
       className="relative z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-xl"
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="./" className="flex items-center gap-2">
-         <Image src="./download.png" alt="Africarbon Logo" width={200} height={200} className="md:h-30 md:w-30 w-20 h-20" />
+        <Link href="/" className="flex items-center gap-2">
+         <Image src="/download.png" alt="Africarbon Logo" width={200} height={200} className="md:h-30 md:w-30 w-20 h-20" />
         </Link>
 
         <div className=" items-center gap-1 flex">
-          <Link href="./" className=" hidden md:block rounded-md px-3 py-2 text-[16px] text-muted-foreground hover:text-foreground">
+          <Link href="/" className=" hidden md:block rounded-md px-3 py-2 text-[16px] text-muted-foreground hover:text-foreground">
            Home
           </Link>
-           <Link href="./about" className="hidden md:block rounded-md px-3 py-2 text-[16px] text-muted-foreground hover:text-foreground">
+           <Link href="/about" className="hidden md:block rounded-md px-3 py-2 text-[16px] text-muted-foreground hover:text-foreground">
            About
           </Link>
            {gangs.map((d) => (
@@ -120,7 +120,7 @@ const Navbar = () => {
             
           <div className="md:hidden block "><SideNav/></div>
           <Button  size="lg"  className="hidden md:block ml-3 bg-lime-500 hover:bg-lime-300" >
-            <Link href="./services">{t('nav.get-started')}</Link>
+            <Link href="/services">{t('nav.get-started')}</Link>
           </Button>
         </div>
 

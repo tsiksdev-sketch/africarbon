@@ -61,7 +61,7 @@ const CoursesSection = () => {
               <div className="flex items-center gap-8">
               
 
-                <Link href="./courses">
+                <Link href="/courses">
                   <Button variant="ghost" size="icon" className="text-white">
                     <ArrowRight className="h-5 w-5" />
                   </Button>

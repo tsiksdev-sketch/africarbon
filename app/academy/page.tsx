@@ -10,7 +10,7 @@ function page() {
       subtitle='AICTS Academy'
       title='Practical climate-market learning for African institutions and professionals'
       description='AICTS Academy provides practical learning for professionals, institutions, regulators, project developers, companies and community-based organisations seeking to understand and participate responsibly in carbon markets, RECs, ESG, MRV and climate finance systems.'
-      src='./d.png'
+      src='/d.png'
 
       />
 
