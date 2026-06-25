@@ -134,6 +134,9 @@ const AfricaRECs = () => {
           <Button  className="mt-6 bg-lime-500" asChild>
             <Link href="/start-a-diagnostic">Request REC Support <ArrowRight className="h-4 w-4" /></Link>
           </Button>
+           <Button  className="mt-6 bg-emerald-500" asChild>
+            <Link href="/start-a-diagnostic">If you want to register Visit  <ArrowRight className="h-4 w-4" /></Link>
+          </Button>
         </motion.div>
       </section>
 
