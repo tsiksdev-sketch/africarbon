@@ -42,7 +42,7 @@ const gangs: Gang[] = [
   },
   
 ];
-
+ 
 const Navbar = () => {
 
    const { t } = useLanguage()
