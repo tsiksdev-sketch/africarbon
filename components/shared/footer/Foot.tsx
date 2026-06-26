@@ -31,6 +31,18 @@ const cols = [
   { to: "/services/capacity-building-training", label: "Capacity Building and Training" }
     ],
   },
+   {
+    title: "Tools",
+    links: [
+      { to: "/tools/article-6", label: "Article 6, Policy and Regulatory Advisory" },
+      { to: "/tools/recs-energy-attribute", label: "RECs and Energy Attribute Markets" },
+      { to: "/tools/carbon-footprint-ghg-esg", label: "Carbon Footprint, GHG and ESG Services" },
+      { to: "/tools/mrv-safeguards-stakeholders", label: "MRV, Safeguards and Stakeholder Engagement" },
+      { to: "/tools/climate-finance-investor-readiness", label: "Climate Finance and Investor Readiness" },
+      { to: "/tools/capacity-building-training", label: "Capacity Building and Training" }
+     
+    ],
+  },
   {
     title: "Contact",
     links: [
@@ -40,14 +52,7 @@ const cols = [
       { to: "/contact", label: "Email: contact@africarbontrading.com" },
     ],
   },
-  {
-    title: "Location",
-    links: [
-      { to: "/contact", label: "Zimbabwe Office: 8 Jackson Road, Hillside" },
-      { to: "/contact", label: "Zambia Office: 86 Independence Avenue, Lusaka, Zambia" },
-     
-    ],
-  },
+ 
 ];
 
 const Footer = () => (
