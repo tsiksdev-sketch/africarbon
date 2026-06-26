@@ -6,18 +6,29 @@ import Image from "next/image";
 
 const cols = [
   {
-    title: "Services",
+    title: "Quick Links",
     links: [
 
-      { to: "/climatefinance", label: "Climate Finance" },
-      { to: "/recs", label: "RECS and EAM" },
+        { to: "/", label: "Home" },
+        { to: "/about", label: "About AICTS" },
+        { to: "/services", label: "Services" },
+        { to: "/sectors", label: "Sectors" },
+        { to: "/africarecs", label: "Africa RECs" },
+        { to: "/academy", label: "AICTS Academy" },
+        { to: "/gat", label: "Grow A Tree Foundation" },
+        { to: "/insights", label: "Insights" },
+        { to: "/tools", label: "Tools" },
     ],
   },
   {
-    title: "Tools",
+    title: "Services",
     links: [
-      { to: "/tools/carbon", label: "Carbon Calculator" },
-      { to: "/tools/glossary", label: "Glossary" },
+  { to: "/services/article-6", label: "Article 6, Policy and Regulatory Advisory" },
+  { to: "/services/recs-energy-attribute", label: "RECs and Energy Attribute Markets" },
+  { to: "/services/carbon-footprint-ghg-esg", label: "Carbon Footprint, GHG and ESG Services" },
+  { to: "/services/mrv-safeguards-stakeholders", label: "MRV, Safeguards and Stakeholder Engagement" },
+  { to: "/services/climate-finance-investor-readiness", label: "Climate Finance and Investor Readiness" },
+  { to: "/services/capacity-building-training", label: "Capacity Building and Training" }
     ],
   },
   {
@@ -75,11 +86,10 @@ const Footer = () => (
         <div>
           <div className="flex items-center gap-2">
             <Leaf className="h-5 w-5 text-yellow-400" />
-            <span className="font-heading text-lg text-yellow-400 font-bold">Africarbon</span>
+            <span className="font-heading text-lg text-yellow-400 font-bold">Africa Institute for Carbon Trading and Sustainability</span>
           </div>
           <p className="mt-4 max-w-xs text-[16px] text-white">
-            An institute for carbon literacy — training, applied projects, and open
-            research for a credible net-zero transition.
+           AICTS is a Zimbabwe and Zambia-registered African advisory and implementation institution supporting credible carbon markets, Renewable Energy Certificates, ESG, GHG accounting, MRV, Article 6, policy development, climate finance and sustainability transformation.
           </p>
         </div>
         {cols.map((c,i) => (
