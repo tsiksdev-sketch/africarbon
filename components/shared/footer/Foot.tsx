@@ -100,7 +100,7 @@ const Footer = () => (
             <ul className="space-y-2">
               {c.links.map((l,j) => (
                 <li key={j}>
-                  <Link href={l.to} className="text-[16px] text-white transition-colors hover:text-lime-300">
+                  <Link href={l.to} className="text-[14px] text-white transition-colors hover:text-lime-300">
                     {l.label}
                   </Link>
                 </li>
@@ -110,8 +110,7 @@ const Footer = () => (
         ))}
       </div>
       <div className="mt-12 border-t border-border pt-6 text-center text-xs text-white">
-        © 2026 Africa Institute for Carbon Trading and Sustainability. Building a net-zero future through education,
-        projects, and research.
+        © 2026 Africa Institute for Carbon Trading and Sustainability. From Climate Ambition to Climate Assets.
       </div>
     </div>
   </footer>
