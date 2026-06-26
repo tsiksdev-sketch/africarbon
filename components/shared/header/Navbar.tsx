@@ -34,10 +34,41 @@ const gangs: Gang[] = [
     label: "Services",
     to: "/services",
     items: [
-      { to: "/services/climatefinance", label: "Climate Finance", desc: "Track and report climate finance impacts." },
-      { to: "/services/esgfootprint", label: "ESG, GHG & Carbon Footprinting", desc: "Measure GHG and carbon footprints." },
-      { to: "/services/recs", label: "Renewable Energy Certificates & Energy Attribute Markets", desc: "Manage RECs and energy attributes." },
-      { to: "/services/mrvsafeguard", label: "MRV and Safeguards", desc: "Strengthen MRV and safeguard compliance." },
+      {
+  to: "/services/carbonmarketsprojects",
+  label: "Carbon Markets & Project Development",
+  desc: "Develop high-integrity carbon market projects."
+},
+{
+  to: "/services/article6advisory",
+  label: "Article 6, Policy & Regulatory Advisory",
+  desc: "Navigate Article 6 policy and compliance."
+},
+{
+  to: "/services/renewablecertificates",
+  label: "Renewable Energy Certificates & Energy Attribute Markets",
+  desc: "Manage RECs and energy attribute claims."
+},
+{
+  to: "/services/esgghecarbonfootprinting",
+  label: "ESG, GHG & Carbon Footprinting",
+  desc: "Measure and report GHG and footprints."
+},
+{
+  to: "/services/mrvstakeholderengagement",
+  label: "MRV, Safeguards & Stakeholder Engagement",
+  desc: "Strengthen MRV, safeguards, and engagement."
+},
+{
+  to: "/services/climatefinanceinvestorreadiness",
+  label: "Climate Finance & Investor Readiness",
+  desc: "Improve readiness for climate finance."
+},
+{
+  to: "/services/capacitybuildingtraining",
+  label: "Capacity Building & Training",
+  desc: "Build skills with practical training."
+}
     ],
   },
 ];
