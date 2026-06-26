@@ -79,8 +79,8 @@ const HeroSection = () => {
           transition={{ delay: 0.5, duration: 0.6 }}
           className="mt-10 flex gap-4"
         >
-         <Link href='/about'> <Button className="cursor-pointer bg-emerald-500" size="lg">Start a Conversation</Button> </Link> 
-         <Link href='/courses'> <Button className="cursor-pointer bg-lime-500" size="lg">Explore Our Services</Button> </Link>
+         <Link href='/contact'> <Button className="cursor-pointer bg-emerald-500" size="lg">Start a Conversation</Button> </Link> 
+         <Link href='/services'> <Button className="cursor-pointer bg-lime-500" size="lg">Explore Our Services</Button> </Link>
          
         </motion.div>
       </motion.div>

@@ -80,7 +80,7 @@ const Sectors = () => {
             AICTS can tailor carbon, REC, ESG, MRV, policy or climate finance support to your sector and country context.
           </p>
           <Button  className="mt-6 bg-lime-500" asChild>
-            <Link href="/contact">Speak to AICTS <ArrowRight className="h-4 w-4" /></Link>
+            <Link href="/contact">Request Sector-Specific Support <ArrowRight className="h-4 w-4" /></Link>
           </Button>
         </motion.div>
       </section>

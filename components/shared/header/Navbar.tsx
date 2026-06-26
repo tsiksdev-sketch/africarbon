@@ -73,11 +73,7 @@ const gangs: Gang[] = [
   label: "Climate Finance & Investor Readiness",
   desc: "Improve readiness for climate finance."
 },
-{
-  to: "/services/capacitybuildingtraining",
-  label: "Capacity Building & Training",
-  desc: "Build skills with practical training."
-}
+
     ],
   },
 ];

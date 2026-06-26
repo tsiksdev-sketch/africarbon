@@ -38,8 +38,8 @@ const CarbonMarkets = () => (
     finalCta={{
       heading: "Take the next credible step",
       copy: "Share your project, policy, institutional or market-readiness question with AICTS and we will help identify a practical way forward.",
-      button: "Start with a Carbon Opportunity Diagnostic",
-      to: "/start-a-diagnostic",
+      button: "Request a Carbon Opportunity Diagnostic",
+      to: "/tools/diagnostic",
     }}
   />
 );

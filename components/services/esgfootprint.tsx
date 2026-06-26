@@ -34,8 +34,8 @@ const ESGFootprinting = () => (
     finalCta={{
       heading: "Take the next credible step",
       copy: "Share your project, policy, institutional or market-readiness question with AICTS and we will help identify a practical way forward.",
-      button: "Start a Carbon Footprint Assessment",
-      to: "/start-a-diagnostic",
+      button: "Start an ESG or Carbon Footprint Assessment",
+      to: "/tools/diagnostic",
     }}
   />
 );

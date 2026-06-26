@@ -32,7 +32,7 @@ const RECs = () => (
       heading: "Take the next credible step",
       copy: "Share your project, policy, institutional or market-readiness question with AICTS and we will help identify a practical way forward.",
       button: "Assess REC Readiness",
-      to: "/start-a-diagnostic",
+      to: "/tools/diagnostic",
     }}
   />
 );

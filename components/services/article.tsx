@@ -36,8 +36,8 @@ const Article6Policy = () => (
     finalCta={{
       heading: "Take the next credible step",
       copy: "Share your project, policy, institutional or market-readiness question with AICTS and we will help identify a practical way forward.",
-      button: "Request a Policy Readiness Discussion",
-      to: "/start-a-diagnostic",
+      button: "Request Policy Readiness Support",
+      to: "/tools/diagnostic",
     }}
   />
 );
