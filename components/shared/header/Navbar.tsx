@@ -89,9 +89,8 @@ const Navbar = () => {
   const [open, setOpen] = useState<string | null>(null);
 
   return (
-    <motion.nav
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+    <nav
+     
       className="relative z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur-xl"
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
@@ -218,7 +217,7 @@ const Navbar = () => {
       </div>
 
       
-    </motion.nav>
+    </nav>
   );
 };
 
