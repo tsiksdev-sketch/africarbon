@@ -6,18 +6,27 @@ import { GraduationCap, Users, Monitor, Briefcase, Landmark, Layers, ArrowRight,
 import { Button } from "@/components/ui/button";
 
 const learningAreas = [
-  "Carbon trading essentials",
-  "Climate change and sustainability",
-  "Carbon project development",
-  "Article 6 readiness",
-  "Renewable Energy Certificates and energy attribute markets",
-  "ESG and sustainability reporting",
-  "GHG accounting and carbon footprinting",
-  "MRV systems",
-  "Climate finance",
-  "Policy and advocacy",
-  "Sector-specific carbon project development",
-  "Community climate action",
+  {name:"Carbon trading essentials",desc:"Practical foundations in carbon credits, project eligibility, standards, baselines, additionality and market integrity."},
+   {
+    name: "Article 6 for Governments and Regulators",
+    desc: "Host-country systems, authorisation pathways, institutional roles, safeguards and implementation readiness.",
+  },
+  {
+    name: "Renewable Energy Certificates for Producers and Buyers (RECs)",
+    desc: "REC fundamentals, generator readiness, documentation, metering evidence, buyer claims and Scope 2 electricity considerations.",
+  },
+  {
+    name: "ESG, GHG Accounting and Carbon Footprinting",
+    desc: "Carbon data, GHG inventories, Scope 1, Scope 2 and selected Scope 3 emissions, ESG baselines and reporting readiness.",
+  },
+  {
+    name: "MRV, Safeguards and Stakeholder Engagement",
+    desc: "Monitoring plans, evidence files, consultation records, FPIC support, safeguards and verification-readiness.",
+  },
+  {
+    name: "Climate Finance and Investor Readiness",
+    desc: "Project concepts, carbon and REC value notes, investor briefs, due diligence readiness and funder-facing narratives.",
+  },
 ];
 
 const formats = [
@@ -64,11 +73,11 @@ const Academy = () => (
 
     <section className="px-6 pb-16">
       <div className="mx-auto max-w-5xl">
-        <h2 className="mb-6 font-heading text-3xl font-bold">Training and learning areas</h2>
+        <h2 className="mb-6 font-heading text-3xl font-bold">Training and learning pathways</h2>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 bg-">
           {learningAreas.map((a, i) => (
             <motion.div
-              key={a}
+              key={i}
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
@@ -76,7 +85,11 @@ const Academy = () => (
               className="flex items-start gap-3 rounded-lg border border-border bg-lime-500 text-white p-4 transition-colors hover:border-primary/40"
             >
               <Check className="mt-0.5 h-6 w-6 shrink-0 text-yellow-500" />
-              <span className="text-sm">{a}</span>
+              
+              <div className="flex flex-col">
+                     <span className="text-sm">{a.name}</span>
+                     <p className="text-white">{a.desc}</p>
+              </div>
             </motion.div>
           ))}
         </div>
