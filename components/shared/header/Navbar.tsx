@@ -44,12 +44,12 @@ const gangs: Gang[] = [
     to: "/services",
     items: [
       {
-  to: "/services/carbonmarketsprojects",
+  to: "/services/carbonmarkets",
   label: "Carbon Markets & Project Development",
   desc: "Develop high-integrity carbon market projects."
 },
 {
-  to: "/services/article6advisory",
+  to: "/services/article6",
   label: "Article 6, Policy & Regulatory Advisory",
   desc: "Navigate Article 6 policy and compliance."
 },

@@ -13,17 +13,14 @@ function page() {
    
     <main> 
       <PagesHero
-        subtitle="About Us"
-        title="Leading the Way in Carbon Solutions"
-        description="We are a team of experts dedicated to providing innovative carbon management strategies and solutions."
+        subtitle="About AICTS"
+        title="An African advisory and implementation partner for credible climate-market action"
+        description="Africa Institute for Carbon Trading and Sustainability is a specialist African institution working across carbon markets, Renewable Energy Certificates, ESG, GHG accounting, MRV, Article 6, climate finance, policy development and sustainability transformation."
         src="/a.png"
       />
 
       <About />
-      <SimpleMarquee text="Intergrity • Innovation • Collaboration • Excellence • Sustainibility • Intergrity • Innovation • Collaboration • Excellence • Sustainibility • Intergrity • Innovation • Collaboration • Excellence • Sustainibility • Intergrity • Innovation • Collaboration • Excellence • Sustainibility • " />
-      <Vission/>
-      <StickySplitSectionScrollTrigger/>
-      <Team/>
+     
     </main>
 
   )  

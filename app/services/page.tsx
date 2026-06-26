@@ -9,12 +9,10 @@ function page() {
    <main>
     <PagesHero
     subtitle='Services'
-    title="Our Impact"
-    description='Discover how Africarbon is transforming the carbon market in Africa, empowering communities, and driving sustainable change. Explore our impact stories, project highlights, and the positive outcomes we have achieved together.'
+    title="Integrated climate-market advisory and implementation services"
+    description='AICTS supports African governments, regulators, project owners, investors, financial institutions, corporates, NGOs and communities across the full climate-market readiness journey — from opportunity screening and policy design to documentation, MRV, ESG reporting, REC readiness and climate finance preparation.'
     src='/c.png'
     />
-    <FilterSection/>
-    <TwoColScrollText/>
     <Cohort/>
    </main>
   )
