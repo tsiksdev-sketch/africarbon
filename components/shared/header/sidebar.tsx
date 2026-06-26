@@ -19,24 +19,75 @@ import {
 } from '@/components/ui/drawer'
 
 
-type Gang = { label: string; items: { to: string; label: string; desc: string }[] };
+type GangItem = { to: string; label: string; desc: string };
+type Gang = { label: string; to?: string; items: GangItem[] };
+
+type GroupItem = { to: string; label: string; desc: string };
+type Group = { label: string; to?: string; items: GangItem[] };
 
 
-const gangs: Gang[] = [
+
+const groups: Group[] = [
  
-  {
-    label: "Services",
-    items: [
-      { to: "./climatefinance", label: "Climate Finance", desc: "nav.tools.carbon-calculator.desc" },
-      { to: "./esgfootprint", label: "ESG, GHG & Carbon Footprinting", desc: "nav.tools.glossary.desc" },
-      { to: "./recs", label: "Renewable Energy Certificates & Energy Attribute Markets", desc: "nav.tools.glossary.desc" },
-      { to:"./mrvsafeguard", label: "MRV and Safeguards ", desc: "nav.tools.glossary.desc" },
-     
-    ],
-  },
+ {
+  label: "nav.tools",
+  to: "/tools",
+  items: [
+    { to: "tools/carbon", label: "Carbon Calculator", desc: "Estimate carbon footprint quickly." },
+    { to: "tools/glossary", label: "Carbon Market Glossary", desc: "Learn key carbon market terms." },
+    { to: "tools/diagnostic-request", label: "Diagnostic Request", desc: "Request a tools-based assessment." },
+    { to: "tools/rec-readiness-checklist", label: "REC Readiness Checklist", desc: "Check readiness for RECs and claims." },
+    { to: "tools/esg-ghg-data-checklist", label: "ESG and GHG Data Checklist", desc: "Confirm data needs for reporting." },
+    { to: "tools/mrv-readiness-checklist", label: "MRV Readiness Checklist", desc: "Assess MRV and safeguards readiness." },
+  ],
+}
   
 ];
 
+const gangs: Gang[] = [
+  {
+    label: "Services",
+    to: "/services",
+    items: [
+      {
+  to: "/services/carbonmarketsprojects",
+  label: "Carbon Markets & Project Development",
+  desc: "Develop high-integrity carbon market projects."
+},
+{
+  to: "/services/article6advisory",
+  label: "Article 6, Policy & Regulatory Advisory",
+  desc: "Navigate Article 6 policy and compliance."
+},
+{
+  to: "/services/recs",
+  label: "Renewable Energy Certificates & Energy Attribute Markets",
+  desc: "Manage RECs and energy attribute claims."
+},
+{
+  to: "/services/esgfootprint",
+  label: "ESG, GHG & Carbon Footprinting",
+  desc: "Measure and report GHG and footprints."
+},
+{
+  to: "/services/mrvsafeguard",
+  label: "MRV, Safeguards & Stakeholder Engagement",
+  desc: "Strengthen MRV, safeguards, and engagement."
+},
+{
+  to: "/services/climatefinance",
+  label: "Climate Finance & Investor Readiness",
+  desc: "Improve readiness for climate finance."
+},
+{
+  to: "/services/capacitybuildingtraining",
+  label: "Capacity Building & Training",
+  desc: "Build skills with practical training."
+}
+    ],
+  },
+];
+ 
 
 export default function SideNav (){
  
