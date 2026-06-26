@@ -151,36 +151,36 @@ export const stats = [
 export const courses = [
   {
     title: "Carbon Markets and Project Development ",
-    level: "Service Pillar 1",
+    src: "/services/carbonmarkets",
     description: "Opportunity screening, feasibility, baselines, methodology mapping, project documentation, MRV and market-readiness support.",
   },
   {
     title: "Article 6, Policy and Regulatory Advisory ",
-    level: "Service Pillar 2",
+     src: "/services/article6",
     description: "Carbon market policy, host-country systems, institutional frameworks, stakeholder consultation and implementation roadmaps.",
   },
   {
     title: "RECs and Energy Attribute Markets",
-    level: "Service Pillar 3",
+    src: "/services/recs",
     description: "Generator readiness, metering evidence, registry-related preparation, buyer education and Africa RECs market development.",
   },
   {
     title: "Carbon Footprint, GHG and ESG Services",
-    level: "Service Pillar 4",
+    src: "/services/esgfootprint",
     description: "emissions baselines, GHG inventories, ESG reporting, reduction roadmaps and executive sustainability briefings.",
   },
   {
     title: "MRV, Safeguards and Stakeholder Engagement",
-    level: "Service Pillar 5",
+    src: "/services/mrvsafeguard",
     description: "Monitoring frameworks, evidence files, FPIC support, consultations, safeguards and verification-readiness systems",
   },
   {
     title: "AICTS Academy ",
-    level: "Service Pillar 6",
+    src: "/academy",
     description: "Online learning, executive masterclasses, sector workshops and institutional capacity-building programmes.",
   },{
     title: "Climate Finance and Investor Readiness ",
-    level: "Service Pillar 7",
+    src: "/services/climatefinance",
     description: "Concept notes, investment briefs, carbon and REC value analysis, risk summaries and funder-facing documentation.",
   },
 ];
