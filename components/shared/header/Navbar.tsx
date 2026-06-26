@@ -13,7 +13,8 @@ import SideNav from "./sidebar";
 
 type Group = { label: string; items: { to: string; label: string; desc: string }[] };
 
-type Gang = { label: string; items: { to: string; label: string; desc: string }[] };
+type GangItem = { to: string; label: string; desc: string };
+type Gang = { label: string; to?: string; items: GangItem[] };
 
 
 const groups: Group[] = [
@@ -29,18 +30,16 @@ const groups: Group[] = [
 ];
 
 const gangs: Gang[] = [
- 
   {
     label: "Services",
+    to: "/services",
     items: [
-     { to: "./climatefinance", label: "Climate Finance", desc: "Track and report climate finance impacts." },
-{ to: "./esgfootprint", label: "ESG, GHG & Carbon Footprinting", desc: "Measure GHG and carbon footprints." },
-{ to: "./recs", label: "Renewable Energy Certificates & Energy Attribute Markets", desc: "Manage RECs and energy attributes." },
-{ to: "./mrvsafeguard", label: "MRV and Safeguards", desc: "Strengthen MRV and safeguard compliance." }
-     
+      { to: "/services/climatefinance", label: "Climate Finance", desc: "Track and report climate finance impacts." },
+      { to: "/services/esgfootprint", label: "ESG, GHG & Carbon Footprinting", desc: "Measure GHG and carbon footprints." },
+      { to: "/services/recs", label: "Renewable Energy Certificates & Energy Attribute Markets", desc: "Manage RECs and energy attributes." },
+      { to: "/services/mrvsafeguard", label: "MRV and Safeguards", desc: "Strengthen MRV and safeguard compliance." },
     ],
   },
-  
 ];
  
 const Navbar = () => {
@@ -67,45 +66,49 @@ const Navbar = () => {
            <Link href="/about" className="hidden md:block rounded-md px-3 py-2 text-[16px] text-muted-foreground hover:text-foreground">
            About
           </Link>
-           {gangs.map((d) => (
-            <div
-              key={d.label}
-              className="relative hidden md:block"
-              onMouseEnter={() => setOpen(d.label)}
-              onMouseLeave={() => setOpen(null)}
-            >
-              <button className="flex items-center gap-1 rounded-md px-3 py-2 text-[16px] text-muted-foreground transition-colors hover:text-foreground">
-                {t(d.label)}
-                <ChevronDown className="h-3.5 w-3.5" />
-              </button>
-              <AnimatePresence>
-                {open === d.label && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 6 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 6 }}
-                    transition={{ duration: 0.15 }}
-                    className="absolute left-0 top-full w-72 pt-2"
-                  >
-                    <div className="rounded-xl border border-border bg-popover p-2 shadow-xl ">
-                      {d.items.map((at,f) => (
-                        <Link
-                          key={f}
-                          href={at.to}
-                          className="block rounded-lg px-3 py-2 transition-colors hover:bg-secondary"
-                        >
-                          <p className="text-[16px] font-medium">{t(at.label)}</p>
-                          <p className="text-xs text-muted-foreground">{t(at.desc)}</p>
-                        </Link>
-                      ))}
-                     
-                    </div>
-                   
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          ))}
+          {gangs.map((d) => (
+  <div
+    key={d.label}
+    className="relative hidden md:block"
+    onMouseEnter={() => setOpen(d.label)}
+    onMouseLeave={() => setOpen(null)}
+  >
+    <Link
+      href={d.to ?? "#"}
+      onClick={() => setOpen(null)}
+      className="flex items-center gap-1 rounded-md px-3 py-2 text-[16px] text-muted-foreground transition-colors hover:text-foreground"
+    >
+      {t(d.label)}
+      <ChevronDown className="h-3.5 w-3.5" />
+    </Link>
+
+    <AnimatePresence>
+      {open === d.label && (
+        <motion.div
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 6 }}
+          transition={{ duration: 0.15 }}
+          className="absolute left-0 top-full w-72 pt-2"
+        >
+          <div className="rounded-xl border border-border bg-popover p-2 shadow-xl ">
+            {d.items.map((at, f) => (
+              <Link
+                key={f}
+                href={at.to}
+                className="block rounded-lg px-3 py-2 transition-colors hover:bg-secondary"
+                onClick={() => setOpen(null)}
+              >
+                <p className="text-[16px] font-medium">{t(at.label)}</p>
+                <p className="text-xs text-muted-foreground">{t(at.desc)}</p>
+              </Link>
+            ))}
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  </div>
+))}
           
             {data.menu.map((item,i) => (
                         <Link

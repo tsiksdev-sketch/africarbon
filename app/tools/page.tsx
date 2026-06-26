@@ -11,7 +11,7 @@ function page() {
     title=' Practical tools for climate-market readiness'
     description=' AICTS tools help organisations and project owners take a first step towards understanding emissions, carbon
           markets, RECs, ESG, MRV and climate finance readiness.'
-    src='./f.png'
+    src='/f.png'
     />
    <Tools/>
    </main>
