@@ -30,7 +30,7 @@ type Group = { label: string; to?: string; items: GangItem[] };
 const groups: Group[] = [
  
  {
-  label: "nav.tools",
+  label: "tools",
   to: "/tools",
   items: [
     { to: "tools/carbon", label: "Carbon Calculator", desc: "Estimate carbon footprint quickly." },
