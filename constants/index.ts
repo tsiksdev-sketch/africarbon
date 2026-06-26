@@ -140,10 +140,12 @@ export const steps = [
 
 
 export const stats = [
-  { value: "12K+", label: "Graduates" },
-  { value: "98%", label: "Completion Rate" },
-  { value: "45", label: "Countries" },
-  { value: "2.1M", label: "Tons CO₂ Reduced" },
+{ value: "Zimbabwe and Zambia", label: "Registered presence" },
+{ value: "Representative and satellite presence within the SADC region", label: "Regional reach" },
+{ value: "Seven connected service pillars", label: "Integrated model" },
+{ value: "Africa RECs, ZAM-REC and ZIM-REC", label: "Market platforms" },
+{ value: "AICTS Academy", label: "Learning platform" },
+{ value: "Grow A Tree Foundation", label: "Community arm" },
 ];
 
 export const courses = [

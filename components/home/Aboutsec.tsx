@@ -62,9 +62,8 @@ const FeaturesSection = () => {
           </h2>
             
             <p className="mb-3 text-[16px] leading-relaxed p-2  text-muted-foreground">
-             Africa’s climate opportunity is growing, but market participation requires more than ambition. Projects, institutions and countries need credible policy, reliable data, documented baselines, stakeholder confidence, MRV systems and finance-ready evidence. AICTS supports this transition by combining carbon market knowledge, policy understanding, project development, stakeholder engagement, climate finance preparation and capacity building.
+             Africa's climate opportunity is growing, but market participation requires more than ambition. Projects, institutions and countries need credible policy, reliable data, documented baselines, stakeholder confidence, MRV systems and finance-ready evidence. AICTS supports this transition by combining carbon market knowledge, policy understanding, project development, stakeholder engagement, climate finance preparation and capacity building.
           </p>
-          
         </motion.div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">

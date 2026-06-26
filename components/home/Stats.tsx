@@ -21,7 +21,7 @@ const StatsSection = () => {
         className="absolute inset-0 -z-10 bg-green-600"
         
       />
-      <div className="mx-auto grid max-w-5xl grid-cols-2 gap-12 px-6 md:grid-cols-4">
+      <div className="mx-auto grid max-w-5xl grid-cols-2 gap-12 px-6 md:grid-cols-6">
         {stats.map((stat, i) => (
           <motion.div
             key={stat.label}
@@ -30,10 +30,10 @@ const StatsSection = () => {
             transition={{ duration: 0.5, delay: i * 0.1 }}
             className="text-center"
           >
-            <p className="font-heading text-4xl font-bold text-white md:text-5xl">
-              {stat.value}
+            <p className="font-heading text-[16px] font-bold text-lime-500 md:text-[18px]">
+              {stat.label}
             </p>
-            <p className="mt-2 text-[18px] text-white">{stat.label}</p>
+            <p className="mt-2 text-[16px] text-white">{stat.value}</p>
           </motion.div>
         ))}
       </div>

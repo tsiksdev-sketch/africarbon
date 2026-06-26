@@ -50,9 +50,7 @@ const CoursesSection = () => {
             >
               <div className="flex-1">
                 <div className="mb-2 flex items-center gap-3">
-                  <span className="rounded-full bg-yellow-400/70 px-3 py-1 text-xs font-semibold text-emerald-700">
-                    {course.level}
-                  </span>
+                  
                 </div>
                 <h3 className="mb-2 font-heading text-2xl font-semibold">{course.title}</h3>
                 <p className="text-[16px] text-white">{course.description}</p>

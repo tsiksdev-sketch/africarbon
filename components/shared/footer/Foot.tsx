@@ -34,12 +34,12 @@ const cols = [
    {
     title: "Tools",
     links: [
-      { to: "/tools/article-6", label: "Article 6, Policy and Regulatory Advisory" },
-      { to: "/tools/recs-energy-attribute", label: "RECs and Energy Attribute Markets" },
-      { to: "/tools/carbon-footprint-ghg-esg", label: "Carbon Footprint, GHG and ESG Services" },
-      { to: "/tools/mrv-safeguards-stakeholders", label: "MRV, Safeguards and Stakeholder Engagement" },
-      { to: "/tools/climate-finance-investor-readiness", label: "Climate Finance and Investor Readiness" },
-      { to: "/tools/capacity-building-training", label: "Capacity Building and Training" }
+       { to: "/tools/carbon-calculator", label: "Carbon Calculator" },
+       { to: "/tools/carbon-market-glossary", label: "Carbon Market Glossary" },
+       { to: "/tools/diagnostic-request", label: "Diagnostic Request" },
+       { to: "/tools/rec-readiness-checklist", label: "REC Readiness Checklist" },
+       { to: "/tools/esg-ghg-data-checklist", label: "ESG and GHG Data Checklist" },
+       { to: "/tools/mrv-readiness-checklist", label: "MRV Readiness Checklist" }
      
     ],
   },

@@ -81,11 +81,11 @@ const CTASection = () => {
           transition={{ duration: 0.5 }}
           className="mx-auto mt-6 max-w-xl text-[18px] text-muted-foreground"
         >
-         Speak to AICTS about carbon markets, RECs, ESG, MRV, Article 6, policy, climate finance or capacity-building support.
+        Speak to AICTS about carbon markets, RECs, ESG, MRV, Article 6, policy, climate finance or capacity-building support. We will help identify the most credible next step for your project, institution or market-readiness need.
         </motion.p>
 
         <motion.div
-          className="mt-10"
+          className="mt-10 flex items-center justify-center gap-5"
           initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
@@ -96,11 +96,29 @@ const CTASection = () => {
             whileTap={{ scale: 0.98 }}
             transition={{ type: "spring", stiffness: 400, damping: 20 }}
           >
-            <Link href='/courses'>
+            <Link href='/contact'>
               <Button size="lg" className="bg-lime-500 text-white">
              Start a Conversation
             </Button>
+            
             </Link>
+
+            
+            
+          </motion.div>
+            <motion.div
+            whileHover={{ scale: 1.03, y: -1 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ type: "spring", stiffness: 400, damping: 20 }}
+          >
+            <Link href='/tools/diagnostic'>
+              <Button size="lg" className="bg-lime-500 text-white">
+             Begin a Diagnostic
+            </Button>
+            
+            </Link>
+
+            
             
           </motion.div>
         </motion.div>
