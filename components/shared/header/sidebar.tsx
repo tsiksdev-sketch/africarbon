@@ -19,11 +19,18 @@ import {
 } from '@/components/ui/drawer'
 
 
-type GangItem = { to: string; label: string; desc: string };
-type Gang = { label: string; to?: string; items: GangItem[] };
+type Gang = {
+  label: string;
+  to: string; // add this
+  items: { to: string; label: string; desc: string }[];
+};
 
-type GroupItem = { to: string; label: string; desc: string };
-type Group = { label: string; to?: string; items: GangItem[] };
+type Group = {
+  label: string;
+  to: string; // add this
+  items: { to: string; label: string; desc: string }[];
+};
+
 
 
 
@@ -120,11 +127,14 @@ export default function SideNav (){
            <Link href="/about" className="rounded-md pl-12 pt-2 text-[16px]">
            About
           </Link>
-          {gangs.map((d) => (
+         {gangs.map((d) => (
   <div key={d.label} className="pt-2 pl-12 text-white">
-    <p className="mb-1 text-xs font-semibold uppercase tracking-wider">
+    <Link
+      href={d.to}
+      className="mb-1 block text-xs font-semibold uppercase tracking-wider hover:underline"
+    >
       {d.label}
-    </p>
+    </Link>
 
     {d.items.map((at, v) => (
       <Link
@@ -151,11 +161,14 @@ export default function SideNav (){
                 </DrawerClose>
               ))}
             </nav>
-            {groups.map((d) => (
+       {groups.map((d) => (
   <div key={d.label} className="pt-2 pl-12 text-white">
-    <p className="mb-1 text-xs font-semibold uppercase tracking-wider">
+    <Link
+      href={d.to}
+      className="mb-1 block text-xs font-semibold uppercase tracking-wider hover:underline"
+    >
       {d.label}
-    </p>
+    </Link>
 
     {d.items.map((at, v) => (
       <Link
