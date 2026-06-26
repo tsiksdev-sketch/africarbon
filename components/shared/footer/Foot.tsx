@@ -32,7 +32,7 @@ const cols = [
     ],
   },
   {
-    title: "Get In Touch",
+    title: "Contact",
     links: [
       { to: "/contact", label: "Zimbabwe Office: 8 Jackson Road, Hillside, Harare, Zimbabwe" },
       { to: "/contact", label: "Zambia Office: 86 Independence Avenue, Lusaka, Zambia" },
@@ -87,7 +87,7 @@ const Footer = () => (
       <div className="grid gap-10 md:grid-cols-[1.4fr_repeat(4,1fr)]">
         <div>
           <div className="flex items-center gap-2">
-            <Leaf className="h-5 w-5 text-yellow-400" />
+            
             <span className="font-heading text-lg text-yellow-400 font-bold">Africa Institute for Carbon Trading and Sustainability</span>
           </div>
           <p className="mt-4 max-w-xs text-[14px] text-white">
