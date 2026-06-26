@@ -34,8 +34,10 @@ const cols = [
   {
     title: "Get In Touch",
     links: [
+      { to: "/contact", label: "Zimbabwe Office: 8 Jackson Road, Hillside, Harare, Zimbabwe" },
+      { to: "/contact", label: "Zambia Office: 86 Independence Avenue, Lusaka, Zambia" },
       { to: "/contact", label: "Telephone: +263 71 678 0112 | +260 961 375 645" },
-         { to: "/contact", label: "Email: contact@africarbontrading.com" },
+      { to: "/contact", label: "Email: contact@africarbontrading.com" },
     ],
   },
   {
@@ -88,7 +90,7 @@ const Footer = () => (
             <Leaf className="h-5 w-5 text-yellow-400" />
             <span className="font-heading text-lg text-yellow-400 font-bold">Africa Institute for Carbon Trading and Sustainability</span>
           </div>
-          <p className="mt-4 max-w-xs text-[16px] text-white">
+          <p className="mt-4 max-w-xs text-[14px] text-white">
            AICTS is a Zimbabwe and Zambia-registered African advisory and implementation institution supporting credible carbon markets, Renewable Energy Certificates, ESG, GHG accounting, MRV, Article 6, policy development, climate finance and sustainability transformation.
           </p>
         </div>
