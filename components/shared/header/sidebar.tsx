@@ -120,16 +120,24 @@ export default function SideNav (){
            <Link href="/about" className="rounded-md pl-12 pt-2 text-[16px]">
            About
           </Link>
-            {gangs.map((d) => (
-            <div key={d.label} className="pt-2 pl-12 text-white">
-              <p className="mb-1 text-xs font-semibold uppercase tracking-wider ">{d.label}</p>
-              {d.items.map((at,v) => (
-                <Link key={v} href={at.to} className="block py-1.5 text-sm " >
-                  {at.label}
-                </Link>
-              ))}
-            </div>
-          ))}
+          {gangs.map((d) => (
+  <div key={d.label} className="pt-2 pl-12 text-white">
+    <p className="mb-1 text-xs font-semibold uppercase tracking-wider">
+      {d.label}
+    </p>
+
+    {d.items.map((at, v) => (
+      <Link
+        key={v}
+        href={at.to}
+        className="block py-2 text-sm hover:underline"
+      >
+        <p className="font-medium">{at.label}</p>
+        <p className="text-xs opacity-80">{at.desc}</p>
+      </Link>
+    ))}
+  </div>
+))}
             <nav className='flex flex-col pl-10 text-[16px] text-white'>
               {data.menu.map((l,id) => (
                 <DrawerClose asChild key={id}>
@@ -143,6 +151,27 @@ export default function SideNav (){
                 </DrawerClose>
               ))}
             </nav>
+            {groups.map((d) => (
+  <div key={d.label} className="pt-2 pl-12 text-white">
+    <p className="mb-1 text-xs font-semibold uppercase tracking-wider">
+      {d.label}
+    </p>
+
+    {d.items.map((at, v) => (
+      <Link
+        key={v}
+        href={at.to}
+        className="block py-2 text-sm hover:underline"
+      >
+        <p className="font-medium">{at.label}</p>
+        <p className="text-xs opacity-80">{at.desc}</p>
+      </Link>
+    ))}
+  </div>
+))}
+                <Link href="/contact" className="rounded-md pl-12 text-[16px] ">
+           Contact
+          </Link>
           </div>
 
         
