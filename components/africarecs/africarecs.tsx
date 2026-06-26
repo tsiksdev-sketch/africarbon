@@ -136,7 +136,7 @@ const AfricaRECs = () => {
           </p>
           <div className="flex gap-4 justify-center mt-6 flex-wrap">
              <Button  className="mt-6 bg-lime-500" asChild>
-            <Link href="/start-a-diagnostic">Request REC Support <ArrowRight className="h-4 w-4" /></Link>
+            <Link href="/tools/diagnostic">Request REC Support <ArrowRight className="h-4 w-4" /></Link>
           </Button>
            <Button  className="mt-6 bg-emerald-500" asChild>
             <Link href="https://africarecs.com/">Visit our platform  <ArrowRight className="h-4 w-4" /></Link>
