@@ -7,11 +7,11 @@ const data:Data = {
         href:'/sectors',
        },
        {
-        name:'Africa RECs ',
+        name:'AfricaRECs ',
         href:'/africarecs',
        },
         {
-        name:'AICTS Academy ',
+        name:'AICTSAcademy ',
         href:'/academy',
        },
        {
@@ -22,17 +22,6 @@ const data:Data = {
         name:'Insights',
         href:'/insights',
        },
-        {
-        name:'Tools',
-        href:'/tools',
-       },
-           {
-        name:'Contact',
-        href:'/contact',
-       },
-       
-       
-    
     ]
 }
 

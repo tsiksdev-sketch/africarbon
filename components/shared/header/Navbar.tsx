@@ -11,21 +11,30 @@ import { useLanguage } from "@/lib/i18n/language-context";
 import SideNav from "./sidebar";
 
 
-type Group = { label: string; items: { to: string; label: string; desc: string }[] };
+
 
 type GangItem = { to: string; label: string; desc: string };
 type Gang = { label: string; to?: string; items: GangItem[] };
 
+type GroupItem = { to: string; label: string; desc: string };
+type Group = { label: string; to?: string; items: GangItem[] };
+
+
 
 const groups: Group[] = [
  
-  {
-    label: "nav.tools",
-    items: [
-      { to: "./carbon", label: "nav.tools.carbon-calculator", desc: "nav.tools.carbon-calculator.desc" },
-      { to: "./glossary", label: "nav.tools.glossary", desc: "nav.tools.glossary.desc" },
-    ],
-  },
+ {
+  label: "nav.tools",
+  to: "/tools",
+  items: [
+    { to: "tools/carbon", label: "Carbon Calculator", desc: "Estimate carbon footprint quickly." },
+    { to: "tools/glossary", label: "Carbon Market Glossary", desc: "Learn key carbon market terms." },
+    { to: "tools/diagnostic-request", label: "Diagnostic Request", desc: "Request a tools-based assessment." },
+    { to: "tools/rec-readiness-checklist", label: "REC Readiness Checklist", desc: "Check readiness for RECs and claims." },
+    { to: "tools/esg-ghg-data-checklist", label: "ESG and GHG Data Checklist", desc: "Confirm data needs for reporting." },
+    { to: "tools/mrv-readiness-checklist", label: "MRV Readiness Checklist", desc: "Assess MRV and safeguards readiness." },
+  ],
+}
   
 ];
 
@@ -45,22 +54,22 @@ const gangs: Gang[] = [
   desc: "Navigate Article 6 policy and compliance."
 },
 {
-  to: "/services/renewablecertificates",
+  to: "/services/recs",
   label: "Renewable Energy Certificates & Energy Attribute Markets",
   desc: "Manage RECs and energy attribute claims."
 },
 {
-  to: "/services/esgghecarbonfootprinting",
+  to: "/services/esgfootprint",
   label: "ESG, GHG & Carbon Footprinting",
   desc: "Measure and report GHG and footprints."
 },
 {
-  to: "/services/mrvstakeholderengagement",
+  to: "/services/mrvsafeguard",
   label: "MRV, Safeguards & Stakeholder Engagement",
   desc: "Strengthen MRV, safeguards, and engagement."
 },
 {
-  to: "/services/climatefinanceinvestorreadiness",
+  to: "/services/climatefinance",
   label: "Climate Finance & Investor Readiness",
   desc: "Improve readiness for climate finance."
 },
@@ -150,6 +159,53 @@ const Navbar = () => {
                           <p className="text-[16px]">{t(item.name)}</p>
                         
                         </Link>))}
+
+                           {groups.map((d) => (
+  <div
+    key={d.label}
+    className="relative hidden md:block"
+    onMouseEnter={() => setOpen(d.label)}
+    onMouseLeave={() => setOpen(null)}
+  >
+    <Link
+      href={d.to ?? "#"}
+      onClick={() => setOpen(null)}
+      className="flex items-center gap-1 rounded-md px-3 py-2 text-[16px] text-muted-foreground transition-colors hover:text-foreground"
+    >
+      {t(d.label)}
+      <ChevronDown className="h-3.5 w-3.5" />
+    </Link>
+
+    <AnimatePresence>
+      {open === d.label && (
+        <motion.div
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 6 }}
+          transition={{ duration: 0.15 }}
+          className="absolute left-0 top-full w-72 pt-2"
+        >
+          <div className="rounded-xl border border-border bg-popover p-2 shadow-xl ">
+            {d.items.map((at, f) => (
+              <Link
+                key={f}
+                href={at.to}
+                className="block rounded-lg px-3 py-2 transition-colors hover:bg-secondary"
+                onClick={() => setOpen(null)}
+              >
+                <p className="text-[16px] font-medium">{t(at.label)}</p>
+                <p className="text-xs text-muted-foreground">{t(at.desc)}</p>
+              </Link>
+            ))}
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  </div>
+))}
+ <Link href="/contact" className=" hidden md:block rounded-md px-3 py-2 text-[16px] text-muted-foreground hover:text-foreground">
+           Contact
+          </Link>
          
             
           <div className="md:hidden block "><SideNav/></div>
