@@ -2,7 +2,7 @@
 
 import { useMemo, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Calculator as CalcIcon, Car, Plane, Building2, Zap, Download } from "lucide-react";
+import { Calculator as CalcIcon, Car, Plane, Building2, Zap, Download, ShieldAlert, Globe, Link, ArrowRight } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
@@ -151,7 +151,43 @@ const Calculator = () => {
           </motion.aside>
         </div>
       </section>
+        
 
+         <section className="px-6 pb-16">
+                <div className="mx-auto flex max-w-3xl gap-4 rounded-xl border border-dashed border-red-300 shadow-lg p-6">
+                  <ShieldAlert className="h-5 w-5 shrink-0 text-red-500" />
+                  <p className="text-sm text-muted-foreground">
+                    <span className="font-semibold text-red-500">Disclaimer </span>
+                  This calculator provides an indicative estimate only. It is not a verified GHG inventory, assurance statement, carbon footprint report or regulatory submission. For organisational reporting, ESG disclosure, tenders or investor use, AICTS can support a structured carbon footprint assessment and GHG inventory.
+                  </p>
+                </div>
+              </section>
+        
+              <section className="px-6 pb-32">
+                <motion.div
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="mx-auto max-w-3xl rounded-2xl border border-border bg-linear-to-br from-lime-600/30 to-transparent p-10 text-center"
+                >
+                  <Globe className="mx-auto h-7 w-7 text-lime-700" />
+                  <h2 className="mt-4 font-heading text-3xl font-bold text-transparent bg-clip-text bg-linear-to-r from-emerald-500 via-lime-400 to-green-500">Need a verified assessment?</h2>
+                 
+                  <p className="mt-3 text-muted-foreground">
+                   AICTS can help turn indicative emissions data into a structured carbon footprint assessment, GHG inventory, emissions baseline and reduction roadmap.
+
+                  </p>
+                  <div className="flex gap-4 justify-center mt-6 flex-wrap">
+                     <Button  className="mt-6 bg-lime-500" asChild>
+                    <Link href="/tools/diagnostic">Request Carbon Footprint Support <ArrowRight className="h-4 w-4" /></Link>
+                  </Button>
+                  
+                  </div>
+                 
+                </motion.div>
+              </section>
+        
      
     </div>
   );

@@ -9,7 +9,7 @@ function page() {
     <PagesHero
     subtitle='Tools'
     title=' Carbon Calculater'
-    description='Estimate your annual footprint in under a minute. Inputs are illustrative'
+    description='Estimate your annual footprint in under a minute. Inputs are illustrative and should be used as a starting point only.'
     src='/f.png'
     />
    <Calculator/>

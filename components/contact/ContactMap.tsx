@@ -42,7 +42,7 @@ const locations: Location[] = [
     country: "Zambia",
     latitude: -15.4288264,
     longitude: 28.3205787,
-    phone: "+260 961375645",
+    phone: "+260 961 375 645",
     email: "contact@africarbontrading.com",
     hours: "Mon-Fri: 8:00 AM - 5:00 PM",
   },
