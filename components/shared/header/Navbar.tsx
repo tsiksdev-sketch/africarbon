@@ -27,12 +27,12 @@ const groups: Group[] = [
   label: "nav.tools",
   to: "/tools",
   items: [
-    { to: "tools/carbon", label: "Carbon Calculator", desc: "Estimate carbon footprint quickly." },
-    { to: "tools/glossary", label: "Carbon Market Glossary", desc: "Learn key carbon market terms." },
-    { to: "tools/diagnostic-request", label: "Diagnostic Request", desc: "Request a tools-based assessment." },
-    { to: "tools/rec-readiness-checklist", label: "REC Readiness Checklist", desc: "Check readiness for RECs and claims." },
-    { to: "tools/esg-ghg-data-checklist", label: "ESG and GHG Data Checklist", desc: "Confirm data needs for reporting." },
-    { to: "tools/mrv-readiness-checklist", label: "MRV Readiness Checklist", desc: "Assess MRV and safeguards readiness." },
+    { to: "/tools/carbon", label: "Carbon Calculator", desc: "Estimate carbon footprint quickly." },
+    { to: "/tools/glossary", label: "Carbon Market Glossary", desc: "Learn key carbon market terms." },
+    { to: "/tools/diagnostic", label: "Diagnostic Request", desc: "Request a tools-based assessment." },
+    { to: "/tools/diagnostic", label: "REC Readiness Checklist", desc: "Check readiness for RECs and claims." },
+    { to: "/tools/diagnostic", label: "ESG and GHG Data Checklist", desc: "Confirm data needs for reporting." },
+    { to: "/tools/diagnostic", label: "MRV Readiness Checklist", desc: "Assess MRV and safeguards readiness." },
   ],
 }
   
@@ -145,34 +145,34 @@ const Navbar = () => {
   </div>
 ))}
           
-            {data.menu.map((item,i) => (
+            {data.menu.map((ite ,i) => (
                         <Link
                           key={i}
-                          href={item.href}
+                          href={ite.href}
                           className= "hidden md:block rounded-md px-3 py-2 text-[16px] text-muted-foreground hover:text-foreground"
                         >
-                          <p className="text-[16px]">{t(item.name)}</p>
+                          <p className="text-[16px]">{t(ite.name)}</p>
                         
                         </Link>))}
 
-                           {groups.map((d) => (
+                           {groups.map((c) => (
   <div
-    key={d.label}
+    key={c.label}
     className="relative hidden md:block"
-    onMouseEnter={() => setOpen(d.label)}
+    onMouseEnter={() => setOpen(c.label)}
     onMouseLeave={() => setOpen(null)}
   >
     <Link
-      href={d.to ?? "#"}
+      href={c.to ?? "#"}
       onClick={() => setOpen(null)}
       className="flex items-center gap-1 rounded-md px-3 py-2 text-[16px] text-muted-foreground transition-colors hover:text-foreground"
     >
-      {t(d.label)}
+      {t(c.label)}
       <ChevronDown className="h-3.5 w-3.5" />
     </Link>
 
     <AnimatePresence>
-      {open === d.label && (
+      {open === c.label && (
         <motion.div
           initial={{ opacity: 0, y: 6 }}
           animate={{ opacity: 1, y: 0 }}
@@ -181,15 +181,15 @@ const Navbar = () => {
           className="absolute left-0 top-full w-72 pt-2"
         >
           <div className="rounded-xl border border-border bg-popover p-2 shadow-xl ">
-            {d.items.map((at, f) => (
+            {c.items.map((ot, g) => (
               <Link
-                key={f}
-                href={at.to}
+                key={g}
+                href={ot.to}
                 className="block rounded-lg px-3 py-2 transition-colors hover:bg-secondary"
                 onClick={() => setOpen(null)}
               >
-                <p className="text-[16px] font-medium">{t(at.label)}</p>
-                <p className="text-xs text-muted-foreground">{t(at.desc)}</p>
+                <p className="text-[16px] font-medium">{t(ot.label)}</p>
+                <p className="text-xs text-muted-foreground">{t(ot.desc)}</p>
               </Link>
             ))}
           </div>

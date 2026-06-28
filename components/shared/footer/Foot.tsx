@@ -23,23 +23,23 @@ const cols = [
   {
     title: "Services",
     links: [
-  { to: "/services/article-6", label: "Article 6, Policy and Regulatory Advisory" },
-  { to: "/services/recs-energy-attribute", label: "RECs and Energy Attribute Markets" },
-  { to: "/services/carbon-footprint-ghg-esg", label: "Carbon Footprint, GHG and ESG Services" },
-  { to: "/services/mrv-safeguards-stakeholders", label: "MRV, Safeguards and Stakeholder Engagement" },
-  { to: "/services/climate-finance-investor-readiness", label: "Climate Finance and Investor Readiness" },
-  { to: "/services/capacity-building-training", label: "Capacity Building and Training" }
+  { to: "/services/article6", label: "Article 6, Policy and Regulatory Advisory" },
+  { to: "/services/carbonmarkets", label: "RECs and Energy Attribute Markets" },
+  { to: "/services/climatefinance", label: "Carbon Footprint, GHG and ESG Services" },
+  { to: "/services/mrvsafeguard", label: "MRV, Safeguards and Stakeholder Engagement" },
+  { to: "/services/climatefinance", label: "Climate Finance and Investor Readiness" },
+  { to: "/services/capacitybuilding", label: "Capacity Building and Training" }
     ],
   },
    {
     title: "Tools",
     links: [
-       { to: "/tools/carbon-calculator", label: "Carbon Calculator" },
-       { to: "/tools/carbon-market-glossary", label: "Carbon Market Glossary" },
-       { to: "/tools/diagnostic-request", label: "Diagnostic Request" },
-       { to: "/tools/rec-readiness-checklist", label: "REC Readiness Checklist" },
-       { to: "/tools/esg-ghg-data-checklist", label: "ESG and GHG Data Checklist" },
-       { to: "/tools/mrv-readiness-checklist", label: "MRV Readiness Checklist" }
+       { to: "/tools/carbon", label: "Carbon Calculator" },
+       { to: "/tools/glossary", label: "Carbon Market Glossary" },
+       { to: "/tools/diagnostic", label: "Diagnostic Request" },
+       { to: "/tools/diagnostic", label: "REC Readiness Checklist" },
+       { to: "/tools/diagnostic", label: "ESG and GHG Data Checklist" },
+       { to: "/tools/diagnostic", label: "MRV Readiness Checklist" }
      
     ],
   },
