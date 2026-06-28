@@ -9,6 +9,9 @@ import CustomCursor from "@/components/Cursor";
 import { Toaster } from 'sonner'
 import { LanguageProvider } from "@/lib/i18n/language-context";
 import WhatsAppChat from "@/components/Whatsapp";
+import FloatingLegalNav from "@/components/floatingnav";
+import CookieConsent from "@/components/cookie";
+
 
 const roboto =Roboto({
   subsets:['latin'],
@@ -53,6 +56,8 @@ export default function RootLayout({
      <ScrollToTop/>
      <CustomCursor/>
      <WhatsAppChat/>
+     <FloatingLegalNav/>
+     <CookieConsent/>
      </LanguageProvider>
       </body>
     </html>

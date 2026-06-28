@@ -3,7 +3,6 @@ import Header from "@/components/shared/header";
 import Footer from "@/components/shared/footer";
 
 
-
 export default async function RootLayout({
   children,
 }: {  
@@ -15,7 +14,6 @@ export default async function RootLayout({
       
         <Header/>
       <main> {children}</main> 
-       
         <Footer/>
   
     </div>

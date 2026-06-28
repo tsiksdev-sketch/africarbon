@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from "react";
-import { MessageCircle, X, Send } from "lucide-react";
+import { MessageCircle, X, Send, Shield, Link } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 // AICTS WhatsApp number in international format, no "+" or spaces
 const WHATSAPP_NUMBER = "263716780112"; // TODO: replace with real AICTS number
@@ -82,6 +82,9 @@ const WhatsAppChat = () => {
           </span>
         )}
       </button>
+
+      
+
       {/* Chat panel */}
       <AnimatePresence>
         {open && (
