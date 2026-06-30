@@ -37,7 +37,7 @@ type Group = {
 const groups: Group[] = [
  
  {
-  label: "nav.tools",
+  label: "Tools",
   to: "/tools",
   items: [
     { to: "/tools/carbon", label: "Carbon Calculator", desc: "Estimate carbon footprint quickly." },
