@@ -6,6 +6,11 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 
+function isMobile() {
+  if (typeof window === "undefined") return false;
+  return window.matchMedia("(max-width: 768px)").matches;
+}
+
 export function SmoothScroll({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
 
@@ -14,11 +19,14 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
+
+    // Disable on mobile + reduced motion
+    if (isMobile()) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-    const BASE_SMOOTH = 1.6; // increase for smoother feel
+    const BASE_SMOOTH = 1.6;
 
     const smoother = ScrollSmoother.create({
       wrapper: "#smooth-wrapper",
@@ -26,9 +34,6 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
       smooth: BASE_SMOOTH,
       effects: true,
       normalizeScroll: true,
-
-      // Keep only options that exist in your typings.
-      // If this also errors, delete this line.
       ignoreMobileResize: true,
     });
 
@@ -61,6 +66,9 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     if (!smootherRef.current) return;
+
+    // Extra safety: if user resizes to mobile, don't try to scroll smoothly
+    if (isMobile()) return;
 
     requestAnimationFrame(() => {
       try {
